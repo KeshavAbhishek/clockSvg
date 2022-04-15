@@ -46,10 +46,39 @@
     /* border: 2px solid white; */
 }
 
-#time h1{
+#time h1,#time span{
     font-size: 5vw;
     font-family: 'Courier New', Courier, monospace;
     font-family: monospace;
+    color: red;
+}
+
+@keyframes fadding {
+    0%{
+        filter: opacity(0);
+    }
+    100%{
+        filter: opacity(1);
+    }
+}
+
+#time #span_1{
+    position: absolute;
+    left: 27.5vw;
+    color: white;
+    font-weight: bolder;
+    font-size: 10vw;
+    animation: fadding 1s ease infinite;
+    animation-direction: alternate;
+}
+#time #span_2{
+    position: absolute;
+    right: 27.5vw;
+    color: white;
+    font-weight: bolder;
+    font-size: 10vw;
+    animation: fadding 1s ease infinite;
+    animation-direction: alternate;
 }
 
 #mainFrame svg circle:nth-child(2){
