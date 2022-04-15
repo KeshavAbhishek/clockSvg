@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock | SVG Styled</title>
+    <style>*{padding: 0;margin: 0;box-sizing: border-box;}</style>
+    <link rel="stylesheet" href="style.css">
+    <script src="node.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="mainFrame">
+            <svg>
+                <circle cx="15vw" cy="15vw" r="7.5vw"></circle>
+                <circle cx="15vw" cy="15vw" r="7.5vw" style="--clr:red;" id="hh"></circle>
+            </svg>
+            <svg>
+                <circle cx="15vw" cy="15vw" r="7.5vw"></circle>
+                <circle cx="15vw" cy="15vw" r="7.5vw" style="--clr:yellow;" id="mm"></circle>
+            </svg>
+            <svg>
+                <circle cx="15vw" cy="15vw" r="7.5vw"></circle>
+                <circle cx="15vw" cy="15vw" r="7.5vw" style="--clr:greenyellow;" id="ss"></circle>
+            </svg>
+            <div id="time">
+                <h1 id="hourDigit" class="digits" style="color: red;">00</h1>
+                <h1 id="minuteDigit" class="digits" style="color: yellow;">00</h1>
+                <h1 id="secondDigit" class="digits" style="color: greenyellow;">00</h1>
+            </div>
+        </div>
+        <div id="ampmFrame">
+            <h1>AM</h1>
+        </div>
+    </div>
+</body>
+</html>
