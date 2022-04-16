@@ -49,7 +49,7 @@
 #time h1,#time span{
     font-size: 5vw;
     font-family: 'Courier New', Courier, monospace;
-    font-family: monospace;
+    /* font-family: monospace; */
     color: red;
 }
 
@@ -99,4 +99,25 @@
 #ampmFrame h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 10vw;
+}
+
+@media only screen and (max-width: 700px) {
+    #time{
+        width: 30vw;
+        height: 90vw;
+        flex-direction: column;
+    }
+
+    #mainFrame{
+        width: 30vw;
+        height: 90vw;
+        flex-direction: column;
+    }
+
+    #time #span_1{
+        display: none;
+    }
+    #time #span_2{
+        display: none;
+    }
 }
