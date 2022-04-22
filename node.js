@@ -1,3 +1,4 @@
+var tickSound = new Audio("tick.mp3");
 var hr = document.getElementById("hourDigit");
 var mn = document.getElementById("minuteDigit");
 var se = document.getElementById("secondDigit");
@@ -38,6 +39,8 @@ setInterval(() => {
     hh.style.strokeDashoffset=parseInt(dasharray-(dasharray*(h/12)));
     mm.style.strokeDashoffset=parseInt(dasharray-(dasharray*(m/60)));
     ss.style.strokeDashoffset=parseInt(dasharray-(dasharray*(s/60)));
+
+    tickSound.play();
     
     hr.innerHTML=h;
     mn.innerHTML=m;

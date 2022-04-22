@@ -3,10 +3,14 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(to right,yellow,orange);
     background: rgb(11, 11, 58);
     flex-direction: column;
+}
+
+-webkit-scrollbar-button{
+    display: none;
 }
 
 #mainFrame{
@@ -120,4 +124,8 @@
     #time #span_2{
         display: none;
     }
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
